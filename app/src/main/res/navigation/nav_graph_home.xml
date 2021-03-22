@@ -12,11 +12,7 @@
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_home2_to_secondFragment"
-            app:destination="@id/secondFragment"
-            app:enterAnim="@anim/fragment_fade_enter"
-            app:exitAnim="@anim/fragment_close_exit"
-            app:popEnterAnim="@anim/fragment_open_enter"
-            app:popExitAnim="@anim/fragment_open_exit" />
+            app:destination="@id/secondFragment" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -25,11 +21,7 @@
         tools:layout="@layout/fragment_second">
         <action
             android:id="@+id/action_secondFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment"
-            app:enterAnim="@anim/fragment_fade_enter"
-            app:exitAnim="@anim/fragment_fade_exit"
-            app:popEnterAnim="@anim/fragment_open_enter"
-            app:popExitAnim="@anim/fragment_open_exit" />
+            app:destination="@id/thirdFragment" />
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"
@@ -38,11 +30,7 @@
         tools:layout="@layout/fragment_third">
         <action
             android:id="@+id/action_thirdFragment_to_navigation"
-            app:destination="@id/firstNestedGraph"
-            app:enterAnim="@anim/fragment_close_enter"
-            app:exitAnim="@anim/fragment_close_exit"
-            app:popEnterAnim="@anim/fragment_fade_exit"
-            app:popExitAnim="@anim/fragment_open_exit" />
+            app:destination="@id/firstNestedGraph" />
     </fragment>
     <action
         android:id="@+id/action_global_home2"
