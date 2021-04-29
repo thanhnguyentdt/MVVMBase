@@ -1,4 +1,4 @@
-package com.example.thefirstprojecttdtdemo.viewmodels
+package com.example.thefirstprojecttdtdemo.viewmodels.settings
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -9,7 +9,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class HomeViewModel : ViewModel() {
+class SettingsViewModel : ViewModel() {
     val liveData : MutableLiveData<String> = MutableLiveData()
     init {
         viewModelScope.launch {

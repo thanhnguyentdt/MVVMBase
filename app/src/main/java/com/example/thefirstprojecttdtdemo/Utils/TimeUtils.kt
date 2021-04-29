@@ -1,4 +1,4 @@
 package com.example.thefirstprojecttdtdemo.Utils
 
-class PrefUtil {
+class TimeUtils {
 }

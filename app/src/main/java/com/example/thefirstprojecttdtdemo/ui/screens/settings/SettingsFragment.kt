@@ -1,4 +1,4 @@
-package com.example.thefirstprojecttdtdemo.ui.fragment
+package com.example.thefirstprojecttdtdemo.ui.screens.settings
 
 import android.annotation.SuppressLint
 import android.graphics.Color
@@ -11,7 +11,8 @@ import androidx.navigation.fragment.findNavController
 import com.example.thefirstprojecttdtdemo.R
 import com.example.thefirstprojecttdtdemo.model.BitcoinTicker
 import com.example.thefirstprojecttdtdemo.network.WebSocketNetWork
-import com.example.thefirstprojecttdtdemo.viewmodels.HomeViewModel
+import com.example.thefirstprojecttdtdemo.ui.common.BaseFragment
+import com.example.thefirstprojecttdtdemo.viewmodels.BaseViewModel
 import kotlinx.android.synthetic.main.fragment_second.*
 
 private const val ARG_PARAM1 = "param1"
@@ -21,7 +22,7 @@ class SecondFragment : BaseFragment() {
     private var param1: String? = null
     private var param2: String? = null
     private lateinit var mWebSocketNetWork: WebSocketNetWork
-    var mViewModel: HomeViewModel = HomeViewModel()
+    var mViewModel: BaseViewModel = BaseViewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

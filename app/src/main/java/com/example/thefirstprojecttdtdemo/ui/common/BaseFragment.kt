@@ -1,4 +1,4 @@
-package com.example.thefirstprojecttdtdemo.ui.fragment
+package com.example.thefirstprojecttdtdemo.ui.common
 
 import android.os.Bundle
 import android.view.View

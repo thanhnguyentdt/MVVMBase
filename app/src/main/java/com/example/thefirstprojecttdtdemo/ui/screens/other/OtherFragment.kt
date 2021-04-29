@@ -1,4 +1,4 @@
-package com.example.thefirstprojecttdtdemo.ui.fragment
+package com.example.thefirstprojecttdtdemo.ui.screens.other
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.thefirstprojecttdtdemo.R
+import com.example.thefirstprojecttdtdemo.ui.common.BaseFragment
 import kotlinx.android.synthetic.main.fragment_third.*
 
 private const val ARG_PARAM1 = "param1"

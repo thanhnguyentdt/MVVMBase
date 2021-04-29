@@ -1,4 +1,4 @@
-package com.example.thefirstprojecttdtdemo.ui.fragment
+package com.example.thefirstprojecttdtdemo.ui.screens.login
 
 import android.graphics.Color
 import android.os.Bundle
@@ -9,6 +9,8 @@ import androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE
 import androidx.navigation.fragment.findNavController
 import com.example.thefirstprojecttdtdemo.R
 import com.example.thefirstprojecttdtdemo.network.WebSocketNetWork
+import com.example.thefirstprojecttdtdemo.ui.common.BaseFragment
+import com.example.thefirstprojecttdtdemo.ui.common.ProgressDialogFragment
 import com.github.mikephil.charting.charts.CombinedChart.DrawOrder
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.components.XAxis.XAxisPosition
