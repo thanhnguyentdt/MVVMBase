@@ -1,4 +1,4 @@
-package com.example.thefirstprojecttdtdemo.ui.fragment
+package com.example.thefirstprojecttdtdemo.ui.screens.author
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,12 +7,13 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import com.example.thefirstprojecttdtdemo.R
+import com.example.thefirstprojecttdtdemo.ui.common.BaseFragment
 import kotlinx.android.synthetic.main.fragment_home.*
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class Home : BaseFragment() {
+class AuthorFragment : BaseFragment() {
     private var param1: String? = null
     private var param2: String? = null
 
@@ -39,7 +40,7 @@ class Home : BaseFragment() {
     companion object {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            Home().apply {
+            AuthorFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

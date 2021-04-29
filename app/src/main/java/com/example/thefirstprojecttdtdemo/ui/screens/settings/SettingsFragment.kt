@@ -1,4 +1,4 @@
-package com.example.thefirstprojecttdtdemo.ui.fragment
+package com.example.thefirstprojecttdtdemo.ui.screens.settings
 
 import android.annotation.SuppressLint
 import android.graphics.Color
@@ -11,17 +11,19 @@ import androidx.navigation.fragment.findNavController
 import com.example.thefirstprojecttdtdemo.R
 import com.example.thefirstprojecttdtdemo.model.BitcoinTicker
 import com.example.thefirstprojecttdtdemo.network.WebSocketNetWork
-import com.example.thefirstprojecttdtdemo.viewmodels.HomeViewModel
+import com.example.thefirstprojecttdtdemo.ui.common.BaseFragment
+import com.example.thefirstprojecttdtdemo.viewmodels.BaseViewModel
+import com.example.thefirstprojecttdtdemo.viewmodels.settings.SettingsViewModel
 import kotlinx.android.synthetic.main.fragment_second.*
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class SecondFragment : BaseFragment() {
+class SettingsFragment : BaseFragment() {
     private var param1: String? = null
     private var param2: String? = null
     private lateinit var mWebSocketNetWork: WebSocketNetWork
-    var mViewModel: HomeViewModel = HomeViewModel()
+    var mViewModel = SettingsViewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -77,7 +79,7 @@ class SecondFragment : BaseFragment() {
     companion object {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            SecondFragment().apply {
+            SettingsFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

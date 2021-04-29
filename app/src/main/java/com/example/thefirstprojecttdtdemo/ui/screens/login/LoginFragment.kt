@@ -1,4 +1,4 @@
-package com.example.thefirstprojecttdtdemo.ui.fragment
+package com.example.thefirstprojecttdtdemo.ui.screens.login
 
 import android.graphics.Color
 import android.os.Bundle
@@ -9,6 +9,8 @@ import androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE
 import androidx.navigation.fragment.findNavController
 import com.example.thefirstprojecttdtdemo.R
 import com.example.thefirstprojecttdtdemo.network.WebSocketNetWork
+import com.example.thefirstprojecttdtdemo.ui.common.BaseFragment
+import com.example.thefirstprojecttdtdemo.ui.common.ProgressDialogFragment
 import com.github.mikephil.charting.charts.CombinedChart.DrawOrder
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.components.XAxis.XAxisPosition
@@ -21,7 +23,7 @@ import kotlin.collections.ArrayList
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class ForthFragment : BaseFragment() {
+class LoginFragment : BaseFragment() {
     private var mCurrentHour: Int = -1
     private var mOpenOfSession: Float? = null
     private var mHighValueOfSession: Float = 0f
@@ -196,7 +198,7 @@ class ForthFragment : BaseFragment() {
     companion object {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            ForthFragment().apply {
+            LoginFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
